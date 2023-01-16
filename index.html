@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://kit.fontawesome.com/3bbfc47f50.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
+    <section id="home">
+        <div id="header">
+            <div class="container">
+                <nav id="nav1">
+                    <h1 title="Portfolio" onclick="window.location.reload()"><span>V</span>ibhorShDev</h1>
+                    <ul id="sidemenu">
+                        <li class="nav-link active-link"><a href="#home">Home</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#about">About</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#services">Services</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#portfolio">Portfolio</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#contact">Contact</a>
+                            <div class="underline"></div>
+                        </li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                </nav>
+                <div class="header-text">
+                    <h1>
+                        <a href="" class="typewrite" data-period="2000"
+                            data-type='[ "UI/UX Designer", "Minecraft Server Maker", "PhotoShop Editor." ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <h2>Hi, I'm <span>Vibhor</span> Sharma <br>From India</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------about------ -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="hkkk.png" alt="soon">
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">About Me</h3>
+                    <p>Hey! There I Am Vibhor Sharma. I Develop Websites. Make/design Minecraft servers as a Configurator. Currently Learned python. Learning Java. Learning high level Javascript. Expert in Photoshop</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Configurator Minecraft</span><br>Minecraft Servers Config Settings</li>
+                            <li><span>Editor</span><br>Photoshop/Blender Editor</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Discord.py/Discord.js</span><br>Designed Several Discord Bots Using Py and JS</li>
+                            <li><span>Website Maker</span><br>Designed Several Wesbites Of Ecommerce and others</li>
+                            <li><span>Minecraft Server Developer</span><br>Designed Several Minecraft Servers </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Python</span><br>Self Learned Python Developer With Certificates</li>
+                            <li><span>Websites</span><br>Self Learnd Web Developer With high Experience</li>
+                            <li><span>Editing</span><br>Self Learned PhotoShop Artist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------services--------- -->
+
+    <section id="services">
+        <div class="container">
+            <h3 class="sub-title">My Services</h3>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-cube"></i>
+                    <h2>Configurator</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel sunt accusamus non! </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel sunt accusamus non! </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web/App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel sunt accusamus non! </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- --------------portfolio---------- -->
+    <section id="portfolio">
+        <div class="container">
+            <h3 class="sub-title">My Works</h3>
+            <div class="work-list">
+                <div class="work">
+                    <img src="workicon.jfif" alt="icon">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>App toh hai</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="workicon.jfif" alt="icon">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>App toh hai</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="workicon.jfif" alt="icon">
+                    <div class="layer">
+                        <h3>Ecommerce App</h3>
+                        <p>App toh hai</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- ----------Contact---------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@examle.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="logo.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" id="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vibhor. All Right Reserved </p>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx3lVzuB28LdGEj2RvZd3QxydcZKxSyxCogJoptH_M2roPgVNOUyBW-DGowcbVGcIeX/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message Sent SuccessFully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+    <script>
+        var TxtType = function (el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtType.prototype.tick = function () {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+
+            if (this.isDeleting) { delta /= 2; }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+
+            setTimeout(function () {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function () {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+    </script>
+    <script>
+        $('.nav-link').on('click', function () {
+            $('.active-link').removeClass('active-link');
+            $(this).addClass('active-link');
+        });
+    </script>
+</body>
+
+</html>
