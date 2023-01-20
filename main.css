@@ -134,11 +134,49 @@ nav ul li a:hover::after {
     color: #ababab;
 }
 
+.about-col-1 h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: -100px;
+    margin-top: 15px;
+}
+
 .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
+}
+
+.about-col-1 ol li{
+    color: white;
+    margin: 40px 20px;
+    margin-left: -80px;
+    font-size: 110%;
+    transition: font-size 0.2s;
+
+}
+
+.about-col-1 ol li span{
+    color: #ff004f;
+}
+
+.about-col-1 ol li:hover{
+    font-size: 120%;
+    cursor: pointer;
+    
+}
+
+.w3_gray {
+    height: 24px;
+    width:50%;
+    background: gray;
+}
+
+.bar_html {
+    background: gray;
+    z-index: 2;
 }
 
 .about-col-1 {
@@ -437,11 +475,23 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
 
     .header-text {
         margin-top: 100%;
         font-size: 16px;
+
+    }
+
+    #header{
+        background-image: none;
+    }
+
+    .about-col-1 h1 {
+        color: white;
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: 1px;
 
     }
 
@@ -470,10 +520,15 @@ nav .fa-solid {
         color: white;
         text-decoration: none;
         font-size: 18px;
-        position: static !important ;
+        position: static !important;
         right: 180px;
-    
+
     }
+
+    .about-col-1 ol li{
+        margin-left: 30px;
+    }
+
     nav ul li {
         display: block;
         margin: 25px;
@@ -518,6 +573,11 @@ nav .fa-solid {
     .copyright {
         font-size: 14px;
     }
+
+    #ggmail:hover {
+        color: #ff004f;
+        font-size: 100%;
+    }
 }
 
 #msg {
@@ -556,4 +616,19 @@ nav .fa-solid {
 
 .hidden {
     visibility: hidden;
+}
+
+
+#ggmail {
+    text-decoration: none;
+    color: white;
+    transition: font-size 0.2s;
+
+}
+
+#ggmail:hover {
+    color: #ff004f;
+    font-size: 105%;
+
+
 }
