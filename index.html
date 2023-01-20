@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://kit.fontawesome.com/3bbfc47f50.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-arrow-up"></i></button>
+    <section id="home">
+        <div id="header">
+            <div class="container">
+                <nav id="nav1">
+                    <h1 title="Portfolio" onclick="window.location.reload()"><span>V</span>ibhorShDev</h1>
+                    <ul id="sidemenu">
+                        <li class="nav-link active-link"><a href="#home">Home</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#about">About</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#services">Services</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#portfolio">Portfolio</a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-link "><a href="#contact">Contact</a>
+                            <div class="underline"></div>
+                        </li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+                </nav>
+                <div class="header-text">
+                    <h1>
+                        <a href="" class="typewrite" data-period="2000"
+                            data-type='[ "UI/UX Designer", "Minecraft Server Maker", "PhotoShop Editor." ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <h2>Hi, I'm <span>Vibhor</span> Sharma <br>From India</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------about------ -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1>Languages</h1>
+                    <ol>
+                        <li>Html-->> <span>90%</span></li>
+                        <li>Python-->> <span>80%</span></li>
+                        <li>JavaScript-->> <span>93%</span></li>
+                        <li>Java-->> <span>20%</span></li>
+
+                    </ol>
+
+                </div>
+                <div class="about-col-2">
+                    <h3 class="sub-title">About Me</h3>
+                    <p>Hey! There I Am Vibhor Sharma. I Develop Websites. Make/design Minecraft servers as a
+                        Configurator. Currently Learned python. Learning Java. Learning high level Javascript. Expert in
+                        Photoshop</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Configurator Minecraft</span><br>Minecraft Servers Config Settings</li>
+                            <li><span>Editor</span><br>Photoshop/Blender Editor</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Discord.py/Discord.js</span><br>Designed Several Discord Bots Using Py and JS</li>
+                            <li><span>Website Maker</span><br>Designed Several Wesbites Of Ecommerce and others</li>
+                            <li><span>Minecraft Server Developer</span><br>Designed Several Minecraft Servers </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Python</span><br>Self Learned Python Developer With Certificates</li>
+                            <li><span>Websites</span><br>Self Learnd Web Developer With high Experience</li>
+                            <li><span>Editing</span><br>Self Learned PhotoShop Artist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------services--------- -->
+
+    <section id="services">
+        <div class="container">
+            <h3 class="sub-title">My Services</h3>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-cube"></i>
+                    <h2>Configurator</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel sunt accusamus non! </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel sunt accusamus non! </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web/App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos vel sunt accusamus non! </p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- --------------portfolio---------- -->
+    <section id="portfolio">
+        <div class="container">
+            <h3 class="sub-title">My Works</h3>
+            <div class="work-list">
+                <div class="work">
+                    <img src="social.jpeg" alt="icon">
+                    <div class="layer">
+                        <h3>Social Media Web</h3>
+                        <p>Website To Meet New Friends Chat Talk And More</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="music.webp" alt="icon">
+                    <div class="layer">
+                        <h3>Music Web</h3>
+                        <p>Listen Latest Songs</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="ecommerce.webp" alt="icon">
+                    <div class="layer">
+                        <h3>Ecommerce Web</h3>
+                        <p>Shop Latest Items</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!-- ----------Contact---------- -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjq44201NX8AhW5-3MBHTV9DcUQFnoECBUQAQ&url=https%3A%2F%2Fmail.google.com%2Fmail%2F&usg=AOvVaw1LdBdmrwYVrMn4NzKd8iI_&cshid=1674200949726295" id="ggmail"><i class="fa-solid fa-paper-plane"></i> vibhorsharma969@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone-volume"></i> SooN</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="logo.png" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" id="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Vibhor. All Right Reserved </p>
+        </div>
+    </section>
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
